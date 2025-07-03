@@ -1,0 +1,28 @@
+extends template 
+
+block vars 
+    - var title = 'Dashbord Page'
+    - var company = "dashbord/"
+
+block body
+    div(class="container  p-5  rounded bg-light") 
+        table.table
+            thead
+                tr
+                th(scope='col') #
+                th(scope='col') First
+                th(scope='col') Last
+                th(scope='col') Email
+            tbody
+                tr
+                th(scope='row') 1
+                td #{info.firstname}
+                td #{info.lastname} 
+                td #{info.email} 
+        div(class="pt-5")         
+            a(class="d-inline p-2 bg-dark text-white text-decoration-none"  href="/logout") logout
+            a(class=" d-inline p-2 bg-primary text-white text-decoration-none m-2" href="/") Home
+            a(class=" d-inline p-2 bg-primary text-white text-decoration-none " href="/profile") Profile page
+    
+
+    
