@@ -1,0 +1,14 @@
+extends template 
+
+block vars 
+    - var title = 'Profile Page'
+    - var company = "profile/"
+
+block body
+    div(class="container  m-5")
+        h5(class="h-3") UserName:-  #{info.firstname}.#{info.lastname}  .
+        h5(class="h-3") UseEmail:-  #{info.email}.
+        div(class="pt-5") 
+            a(class="d-inline p-2 bg-primary text-white text-decoration-none" href="/logout") logout
+            a(class=" d-inline p-2 bg-primary text-white text-decoration-none m-2" href="/") Home
+            a(class=" d-inline p-2 bg-primary text-white text-decoration-none " href="/dashbord") Dashbord page
