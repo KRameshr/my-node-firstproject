@@ -1,0 +1,19 @@
+{
+  "name": "stepfour",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "K Ramesh",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "client-sessions": "^0.8.0",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.2",
+    "pug": "^3.0.3"
+  }
+}
